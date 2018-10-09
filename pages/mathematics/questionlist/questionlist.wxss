@@ -1,0 +1,63 @@
+/* pages/mathematics/questionlist/questionlist.wxss */
+.view-title-row{
+  height: 80rpx;
+  background-color: #53d9a1;
+}
+.view-kowladge-row{
+  height: 80rpx;
+  border-bottom: 1rpx  solid gray;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+.view-question-row{
+  height: 100rpx;
+  border-bottom: 1rpx  solid gray;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  
+}
+.view-qcard-row {
+  display: flex;
+  flex-direction: row;
+  
+}
+.view_qcard_memo {
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  align-content:center;
+  height: 85rpx;
+}
+.img_qcard_row {
+  height: 50rpx;
+  line-height: 80rpx;
+  width: 60rpx;
+  margin-top: 15rpx;
+  margin-left: 15rpx;
+}
+.view-kowladge{
+  height: 240rpx;
+}
+.text-title-row{
+  line-height: 80rpx;
+  font-size: small;
+  margin-left: 20rpx;
+}
+
+.text-knowladge-left{
+  line-height: 80rpx;
+  font-size: small;
+  margin-left: 10rpx;
+}
+.text-knowladge-right{
+  line-height: 80rpx;
+  font-size: small;
+  margin-right: 30rpx;
+  text-align: right;
+}

@@ -1,0 +1,99 @@
+/**list.wxss**/
+
+page {
+  overflow-y:scroll;
+  background:#f4f4f4;
+  /* padding-top:117rpx; */
+}
+.container {
+  height: 1500rpx;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 20rpx;
+}
+.swiper_image {
+  display: flex;
+  flex-direction: column;
+  height: 900rpx;
+  width: 100%;
+}
+.view_todo_list {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 20rpx;
+  margin-top:20rpx;
+}
+.view_user_rader {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: 565rpx;
+  justify-content: space-between;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 20rpx;
+  margin-top:20rpx;
+}
+.theme-img {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 128rpx;
+  position: relative;
+  top: 44rpx;
+  left: 35rpx;
+  border: 3px solid #fff;
+  box-shadow: 0px 10px 14px #e3e3e3;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+}
+.label-detail {
+  font-size:12px;
+  margin-top: 8rpx;
+  margin-left: 6rpx;
+}
+.label_head{
+  font-weight:bold;
+  font-size: 14px;
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+}
+.horizontal_view {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.verticall_view {
+  display: flex;
+  flex-direction: column;
+}
+.horizontal_view .detail_img {
+  width: 40rpx;
+  height: 40rpx;
+}
+.toolbar_img {
+  width: 80rpx;
+  height: 80rpx;
+}
+.toolbar-text {
+  font-size: 12px;
+  margin-left: 6rpx;
+}
+.view_todo_list ol {
+  margin-top: 16rpx;
+}
+.view_todo_list li {
+  font-size: 12px;
+  margin-left: 20rpx;
+}
+.rader_img {
+  align-self: center;
+}

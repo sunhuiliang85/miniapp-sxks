@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/questionbank/questionbank",
+    "pages/mrjbydd/mrjbydd",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/mathematics/questionlist/questionlist",
+    "pages/mathematics/questioncard/questioncard"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "black",
+    "navigationBarTitleText": "mychat",
+    "navigationBarTextStyle": "black",
+    "navigationStyle": "custom"
+  },
+  "tabBar": {
+    "color": "#A7A7AA",
+    "backgroundColor": "#fff",
+    "selectedColor": "#FF3049",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/common/img/busicard.png",
+        "text": "名片",
+        "selectedIconPath": "/common/img/busicard.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/common/img/group.png",
+        "text": "群推广",
+        "selectedIconPath": "/common/img/group.png"
+      }
+    ]
+  }
+}

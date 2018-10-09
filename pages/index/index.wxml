@@ -1,0 +1,58 @@
+
+<!--index.wxml-->
+ <view class="container">  
+      <image  style="width:100%;" src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1534493674&di=bdf59f91a169d88cb24066d5864fb271&src=http://attachments.gfan.com/forum/201606/20/232926plpxjxjlzpl0xbpc.jpg'></image>
+  
+   <view class="introduction">
+      <view id="content" class="horizontal_view">
+        <view id="user_avatar">
+            <image  class="theme-img" src='https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1534493674&di=bdf59f91a169d88cb24066d5864fb271&src=http://attachments.gfan.com/forum/201606/20/232926plpxjxjlzpl0xbpc.jpg' ></image>
+        </view>
+        <view style="position:relative;left:80rpx;top:50rpx">
+           <view class='verticall_view'>
+              <label id='name'>孙会良</label>
+              <label id='position' class='label-detail'>社群项目技术总监</label>
+              <label id='company' class='label-detail'>多点科技股份有限公司</label>
+              <view class='horizontal_view'>
+                  <image class='detail_img' src='/common/img/tel.svg'></image>
+                  <label id='telno' class='label-detail'>18618385127</label>
+              </view>
+              <view class='horizontal_view'>
+                  <image class='detail_img' src='/common/img/email.svg'></image>
+                  <label id='email' class='label-detail'>sunhuiliang85@163.com</label>
+              </view>
+           </view>          
+        </view>
+      </view>
+   </view>
+      <view id="view_toolbar" class="horizontal_view" style='width:680rpx;'>
+           <view id="view_send_businesscard" class='verticall_view'style="margin-left:30rpx;margin-top:-25rpx">
+                <image class='toolbar_img' src='/common/img/arrow.svg'></image>
+                <text id="text_send_businesscard" class='toolbar-text'>发名片</text>
+           </view>
+           <view id="view_preview_businesscard" class='verticall_view'style="margin-left:80rpx;margin-top:-25rpx">
+                <image class='toolbar_img' src='/common/img/preview.svg'></image>
+                <text id="text_preview_businesscard" class='toolbar-text'>名片预览</text>
+           </view>
+            <view id="view_businesscard_img" class='verticall_view'style="margin-left:80rpx;margin-top:-25rpx">
+                <image class='toolbar_img' src='/common/img/img.svg' style='width:60rpx;height:80rpx'></image>
+                <text id="text_businesscard_img" class='toolbar-text' style='margin-left:-5rpx'>名片图片</text>
+           </view>
+                      <view id="view_qrcode" class='verticall_view'style="margin-left:80rpx;margin-top:-25rpx">
+                <image class='toolbar_img'   src='/common/img/qrcode.svg' style='width:60rpx;height:80rpx'></image>
+                <text id="text_qrcode" class='toolbar-text' style='margin-left:-5rpx'>专属码</text>
+           </view>
+      </view>
+</view>
+
+<view class="view_todo_list">
+    <label class="label_head">待办事项</label>
+    <ol>
+      <li><text style='color:red'>*</text> 您还没有编辑名片信息，<navigator url="" style="display:inline;color:blue">立即设置名片</navigator></li>
+    </ol>
+
+</view>
+<view class="view_user_rader">
+    <label class="label_head">用户雷达</label>
+    <image class='rader_img' src='/common/img/rader.svg'></image>
+</view>

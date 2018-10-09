@@ -1,0 +1,46 @@
+<!--pages/mathematics/questionlist/questionlist.wxml-->
+<view id="header-view" class="global-header-view">
+     <text id="text-header" class='global-text-header'>加减运算1级</text>
+</view>
+<view  class="view-title-row">
+    <text  class='text-title-row'>知识点熟练度</text>
+</view>
+<view id="view-kowladge" class="view-kowladge">
+     <view class="view-kowladge-row">
+         <text class="text-knowladge-left">本等级有题卡 </text>
+         <text class="text-knowladge-right">32张</text>
+     </view>
+     <view class="view-kowladge-row">
+         <text class="text-knowladge-left" decode>获得☆ &nbsp;&nbsp;</text>
+         <text class="text-knowladge-right">0张</text>
+         <text class="text-knowladge-left">获得☆☆ </text>
+         <text class="text-knowladge-right">0张</text>
+     </view>
+     <view class="view-kowladge-row">
+         <text class="text-knowladge-left">获得☆☆☆ </text>
+         <text class="text-knowladge-right">1张</text>
+         <text class="text-knowladge-left">已获得奖励 </text>
+         <text class="text-knowladge-right">3/96</text>
+     </view>
+</view>
+<view  class="view-title-row">
+    <text  class='text-title-row'>题卡</text>
+</view>
+<view id="view-questionlist" class="view-questionlist">
+    <view wx:for="{{data}}">
+     <view class="view-question-row" data-qcardid="{{item.qcardId}}" data-qcardname="{{item.qcardName}}" bindtap="selectQuuestion">
+        <view class='view-qcard-row'>
+            <image class="img_qcard_row" src='../../img/qcard.svg'></image>
+            <view class="view_qcard_memo">
+                <text class="">{{item.qcardName}}</text>
+                <text class="">{{item.memo}}</text> 
+            </view>
+        </view>
+        <view>
+            <text class="text-knowladge-right" wx:if="{{item.difficultLevel==1}}">容易 </text>
+            <text class="text-knowladge-right" wx:elif="{{item.difficultLevel==2}}">一般</text>
+            <text class="text-knowladge-right" wx:else>困难</text>
+        </view>
+     </view>
+     </view>
+</view>

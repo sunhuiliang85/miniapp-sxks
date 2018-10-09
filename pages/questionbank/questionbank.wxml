@@ -1,0 +1,12 @@
+<!--pages/questionbank/questionbank.wxml-->
+<view id="header-view" class="global-header-view">
+     <text id="text-header" class='global-text-header'>题库</text>
+</view>
+
+<view id="course-list" class="course-list">
+   <view id="course-view" class="course-list" wx:for="{{courselist}}">
+      <button class='course-item'> 
+          <image src='{{item.imgsrc}}' class='img-item'></image>
+      </button> 
+    </view>
+</view>

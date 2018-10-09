@@ -1,0 +1,235 @@
+/* 打卡日历 用户相关 */
+
+.user-info-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16rpx;
+    background-color: #fff;
+    box-shadow: 0 20rpx 40rpx 0 rgba(0, 0, 0, 0.04);
+}
+
+/* 头像区域 */
+
+.user-info-wrap .info-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 36rpx 0rpx 36rpx 24rpx;
+    box-sizing: border-box;
+}
+
+.user-info-wrap .avatar,
+.user-info-wrap .head-img {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 68rpx;
+}
+
+.user-info-wrap .head-img-main {
+    width: 68rpx;
+    height: 68rpx;
+    border-radius: 68rpx;
+    position: relative;
+    margin-right: 0rpx;
+}
+
+.user-info-wrap .headImg-crown-ico {
+    position: absolute;
+    top: -4rpx;
+    right: -4rpx;
+    width: 32rpx;
+    height: 32rpx;
+}
+
+/* 头像右侧 用户名 信息 */
+
+.user-info-wrap .info {
+    flex: 1;
+    line-height: 1;
+    margin-left: 20rpx;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* 用户昵称 */
+
+.user-info-wrap .info .nick-name {
+    font-size: 30rpx;
+    font-weight: 500;
+    color: #333333;
+}
+
+/* 打卡天数 */
+
+.user-info-wrap .info .user-number {
+    font-size: 24rpx;
+    line-height: 1;
+    color: #858585;
+    padding-top: 14rpx;
+    display: flex;
+    align-items: center;
+}
+
+.user-info-wrap .info .user-number .dot {
+    background: #c3c3c3;
+    border-radius: 100%;
+    width: 6rpx;
+    height: 6rpx;
+    margin: 0 10rpx;
+}
+
+/* 返回我的打开 */
+
+.user-info-wrap .back-my-date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28rpx;
+    color: #9b9b9b;
+    border-top: #f4f4f4 2rpx solid;
+    width: 100%;
+    padding: 36rpx 0rpx 36rpx 0rpx;
+}
+
+/* 右侧箭头 */
+
+.user-info-wrap .back-my-date image {
+    width: 32rpx;
+    height: 28rpx;
+    margin-right: 12rpx;
+}
+
+.user-info-wrap .goInfo {
+    width: 72rpx;
+    height: 68rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* 点评提示 */
+
+.listwrap .dot-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.listwrap .dot-btn button {
+    float: right;
+    width: 72rpx;
+    height: 68rpx;
+    margin: 0 -28rpx 0 0;
+    background: none;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: absolute;
+    right: 0px;
+}
+
+/* 点评提示 */
+
+.listwrap .comment-icon {
+    width: 85rpx;
+    height: 52rpx;
+    margin: 10rpx 30rpx 0rpx 0rpx;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 7;
+}
+
+.listwrap .posted-main {
+    margin: 6rpx 0 16rpx 0;
+    box-sizing: border-box;
+    widows: 720rpx;
+    padding: 28rpx;
+    background: #fff;
+    border-radius: 16rpx;
+    overflow: visible;
+    box-shadow: 0 20rpx 40rpx 0 rgba(0, 0, 0, 0.04);
+    position: relative;
+    z-index: 2;
+}
+
+/* 精选笔记 */
+
+.listwrap .activity-ok {
+    position: absolute;
+    z-index: 9;
+    right: 22rpx;
+    top: -6rpx;
+}
+
+.listwrap .activity-ok image {
+    width: 80rpx;
+    height: 46rpx;
+}
+
+/* 查看详情 */
+
+.user-info-wrap .arrow-ico {
+    width: 16rpx;
+    height: 28rpx;
+}
+
+/* 打卡列表 */
+
+.listwrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 16rpx;
+    /* background-color:#fff; */
+    box-shadow: 0 20rpx 40rpx 0 rgba(0, 0, 0, 0.04);
+}
+
+.listwrap+.listwrap {
+    margin-top: 16rpx;
+}
+
+.cardList,
+.list-con {
+    width: 100%;
+}
+
+.list-con .user-info-wrap {
+    border-radius: 0rpx;
+    box-shadow: none;
+}
+
+/* 打开列表文字内容 与头像的距离 */
+
+.list-con .user-info-wrap .info-box {
+    padding: 44rpx 0rpx 22rpx 24rpx;
+}
+
+/* 打开列表文字内容 */
+
+.listwrap .card-text {
+    font-size: 30rpx;
+    line-height: 1.73;
+    color: #333;
+    padding: 22rpx 32rpx 20rpx 28rpx;
+}
+
+.listwrap .card-like {
+    padding: 0rpx 0rpx 36rpx 28rpx;
+}
+
+.listwrap .card-like .posted-user-operating {
+    margin-top: 0;
+}

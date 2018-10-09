@@ -1,0 +1,47 @@
+/* pages/questionbank/questionbank.wxss */
+page {
+  overflow-y:scroll;
+  background:white;
+  /* padding-top:117rpx; */
+}
+.horizontal-view {
+  display: flex;
+  flex-direction: row
+}
+
+.question-view {
+  height: 250rpx;
+  width: 375rpx;
+  border: 1rpx solid red;
+}
+
+
+.course-item {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:center;
+  margin:0;
+  padding:0;
+  margin-top:0rpx;
+ 
+  overflow:inherit;
+  height: 375rpx;
+  width: 375rpx;
+  border: 1rpx solid red;
+}
+.img-item {
+   display:flex;
+   flex-direction:row;
+  height: 375rpx;
+  width: 375rpx;
+ 
+}
+.course-list {
+  display:flex;
+   flex-direction:row;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  padding:0rpx;
+  padding-top:0rpx;
+}

@@ -1,0 +1,17 @@
+/* pages/mathematics/questioncard/questioncard.wxss */
+.qcard-view{
+    height:500rpx;
+    background-color: red;
+    border-radius:0rpx 0rpx 30rpx 30rpx;
+    text-align: center;
+    flex-direction: row;
+    line-height:500rpx;
+   // font-size: xx-large;
+   font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+.global-header-view{
+  background-color: red;
+  
+}

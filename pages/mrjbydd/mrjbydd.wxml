@@ -1,0 +1,35 @@
+
+<!--index.wxml-->
+ <view class="container"> 
+    <view id="view_swiper">
+        <swiper style="height:900rpx"
+                indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+                interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{imgUrls}}" wx:key="*this">
+          <swiper-item style="height:900rpx">
+            <view style="height:900rpx">
+              <image  class="swiper_image" src='{{item}}'></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+  </view>
+
+       <view id="view_toolbar" class="horizontal_view" >
+           <view id="view_send_businesscard" class='verticall_view'style="margin-left:40rpx;">
+                <image class='toolbar_img' src='/common/img/arrow.svg'/>
+                <text id="text_send_businesscard" class='toolbar-text'>互动课题</text>
+           </view>
+           <view id="view_preview_businesscard" class='verticall_view'style="margin-left:100rpx;">
+                <image class='toolbar_img' src='/common/img/preview.svg'></image>
+                <text id="text_preview_businesscard" class='toolbar-text'>我的统计</text>
+           </view>
+            
+       <view id="view_qrcode" class='verticall_view'style="margin-left:120rpx;">
+                <image class='toolbar_img'   src='/common/img/qrcode.svg' style='width:60rpx;height:80rpx'></image>
+                <text id="text_qrcode" class='toolbar-text' style='margin-left:-5rpx'>排行榜</text>
+           </view>
+      </view>
+ 
+ </view> 
+

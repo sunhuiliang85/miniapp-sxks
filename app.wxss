@@ -1,0 +1,25 @@
+/**app.wxss**/
+
+button::after{
+  border: none;
+}
+/* 所有页面 顶部距离 */
+.qz{padding-top:64px;}
+.iPhone-X{padding-top:88px;}
+.page-top-style{top:64px;}
+.iPhone-X .page-top-style{top:88px;}
+
+.global-title-view{
+    margin-bottom: 10rpx;
+}
+.global-header-view {
+  height: 120rpx;
+}
+.global-text-header {
+  font-family:Courier, Calibri,"宋体";
+  font-style: "webfont";
+  position: relative;
+  top:50rpx;
+  margin-left: 20rpx;
+  vertical-align: bottom;  
+}
