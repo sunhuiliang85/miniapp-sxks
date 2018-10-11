@@ -3,5 +3,22 @@
      <text id="text-header" class='global-text-header'>{{qcardname}}</text>
 </view>
 <view id="qcard-view" class="qcard-view">
-    1 + 2 =
+    {{leftnum}} + {{rightnum}} =
 </view>
+<view id="answer-view" class="answer-view"> 
+    <view class='view-number-row'>
+        <button class="btn_number">1</button>
+        <button class="btn_number">2</button>
+        <button class="btn_number">3</button>
+    </view>
+     <view class='view-number-row'>
+        <button class="btn_number">4</button>
+        <button class="btn_number">5</button>
+        <button class="btn_number">6</button>
+    </view>
+        <view class='view-number-row'>
+        <button class="btn_number">7</button>
+        <button class="btn_number">8</button>
+        <button class="btn_number">9</button>
+    </view>   
+</view> 

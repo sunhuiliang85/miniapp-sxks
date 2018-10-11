@@ -6,8 +6,8 @@
     "pages/logs/logs",
     "pages/login/login",
     "pages/register/register",
-    "pages/mathematics/questionlist/questionlist",
-    "pages/mathematics/questioncard/questioncard"
+    "pages/mathematics/questioncard/questioncard",
+    "pages/mathematics/questionlist/questionlist"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.2.5",
 	"appid": "wxaa69e10b94cb1a68",
-	"projectname": "%E6%9E%81%E5%AE%A2%E5%B7%B7%E5%AD%90",
+	"projectname": "%E6%95%B0%E5%AD%A6%E5%8F%A3%E7%AE%97",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -51,6 +51,12 @@
 					"id": -1,
 					"name": "jjys1",
 					"pathName": "pages/mathematics/questionlist/questionlist",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "jjys1",
+					"pathName": "pages/mathematics/questioncard/questioncard",
 					"query": ""
 				}
 			]

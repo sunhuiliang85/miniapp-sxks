@@ -1,4 +1,6 @@
 // pages/mathematics/questioncard/questioncard.js
+import questionalgorithm from '../questionalgorithm/questionalgorithm';
+const algorithm = new questionalgorithm()
 Page({
 
   /**
@@ -6,20 +8,20 @@ Page({
    */
   data: {
     qcardid:'',
-    qcardname:''
+    qcardname:'',
+    leftnum:'',
+    rightnum:''
   },
-
+ 
   /**
    * 生命周期函数--监听页面加载
-   */
+   */    
   onLoad: function (options) {
-    console.log(options.qcardname);
+    let questionitems = algorithm.getFivebelowaddition();
     this.setData({
-        qcardid:options.qcardid,
-        qcardname:options.qcardname
+      leftnum: questionitems[0],
+      rightnum: questionitems[1]
     })
-    
-    
   },
 
   /**
