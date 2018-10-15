@@ -9,8 +9,12 @@ Page({
   data: {
     qcardid:'',
     qcardname:'',
-    leftnum:'',
-    rightnum:''
+    leftnum:'', 
+    rightnum:'',
+    ishiddennum:false,
+    queueData:null,
+    answernum:0,
+    numsize:6
   },
  
   /**
@@ -71,5 +75,37 @@ Page({
    */
   onShareAppMessage: function () {
 
-  }
+  },
+  showAnswer: function () {
+    var animation = wx.createAnimation({});
+    //animation.translate((this.data.widthScreen - 60), 0).scale(0.3).opacity(0.5).step({ duration: 3000 })
+    //animation.translate((this.data.widthScreen - 60), -100).scale(0.3).opacity(0).step({ duration: 3000 })
+    animation.translate(0, 20).scale(0.3).opacity(1).step({ duration: 100 })
+    this.setData({
+      queueData: animation.export()
+    })
+  },
+  
+  answer: function(e) {
+    let dataset = e.target.dataset;
+    let num = dataset.num;
+    var animation = wx.createAnimation({});
+    // //animation.translate((this.data.widthScreen - 60), 0).scale(0.3).opacity(0.5).step({ duration: 3000 })
+    // //animation.translate((this.data.widthScreen - 60), -100).scale(0.3).opacity(0).step({ duration: 3000 })
+     animation.translate(0, 20).scale(0.3).opacity(1).step({ duration: 100 })
+    this.setData({ 
+      ishiddennum:true,  
+      answernum: num
+                  })
+    setTimeout(function(args){
+      args.showAnswer(); 
+    },100,this);
+    setTimeout(function (args) {
+      args.setData({
+        ishiddennum: false,
+        queueData:null,
+        numsize:6
+      })
+    }, 500, this);
+  } 
 })

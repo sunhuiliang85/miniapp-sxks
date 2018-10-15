@@ -2,23 +2,27 @@
 <view id="header-view" class="global-header-view">
      <text id="text-header" class='global-text-header'>{{qcardname}}</text>
 </view>
-<view id="qcard-view" class="qcard-view">
+<view  id="qcard-view" class="qcard-view">
+   <view style='height:200rpx'>
     <text>{{leftnum}} + {{rightnum}} = </text> <image style='width:80rpx;height:80rpx' src='img/bread.png'></image>
+    </view>
+      
+      <view wx:if='{{ishiddennum}}' style='width:750rpx;height:300rpx;font-size:{{numsize}}rem' animation="{{queueData}}">{{answernum}}</view>
 </view>
 <view id="answer-view" class="answer-view"> 
-    <view class='view-number-row'>
-        <button class="btn_number">1</button>
-        <button class="btn_number">2</button>
-        <button class="btn_number">3</button>
+    <view class='view-number-row'> 
+        <button class="btn_number" data-num='1' catchtap='answer'>1</button>
+        <button class="btn_number" data-num='2' catchtap='answer'>2</button>
+        <button class="btn_number" data-num='3' catchtap='answer'>3</button>
     </view>
      <view class='view-number-row'>
-        <button class="btn_number">4</button>
-        <button class="btn_number">5</button>
-        <button class="btn_number">6</button>
+        <button class="btn_number" data-num='4' catchtap='answer'>4</button>
+        <button class="btn_number" data-num='5' catchtap='answer'>5</button>
+        <button class="btn_number" data-num='6' catchtap='answer'>6</button>
     </view>
         <view class='view-number-row'>
-        <button class="btn_number">7</button>
-        <button class="btn_number">8</button>
-        <button class="btn_number">9</button>
+        <button class="btn_number" data-num='7' catchtap='answer'>7</button>
+        <button class="btn_number" data-num='8' catchtap='answer'>8</button>
+        <button class="btn_number" data-num='9' catchtap='answer'>9</button>
     </view>   
 </view> 

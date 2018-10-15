@@ -1,0 +1,9 @@
+<view style='width:60px;height:60px;background-color:yellow;' animation="{{moveData}}" bindtap='moveClick'>移动</view>
+<view style='width:60px;height:60px;background-color:red;' animation="{{rotateData}}" bindtap='rotateClick'>旋转</view>
+<view style='width:60px;height:60px;background-color:green;' animation="{{alphaData}}" bindtap='alphaClick'>透明度</view>
+<view style='width:60px;height:60px;background-color:orange;' animation="{{scaleData}}" bindtap='scaleClick'>缩放</view>
+<view style='width:60px;height:60px;background-color:blue;' animation="{{skewData}}" bindtap='skewClick'>倾斜</view>
+<view style='width:60px;height:60px;background-color:black;color:white' animation="{{matrixData}}" bindtap='matrixClick'>变形</view>
+<view style='width:60px;height:60px;font-size:100rpx' animation="{{queueData}}" bindtap='queueClick'>移动</view>
+<text animation="{{queueData}}" bindtap='queueClick'>3</text>
+<text bindtap='queueClick'>3</text> 

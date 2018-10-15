@@ -4,14 +4,16 @@
     background-color: red;
     border-radius:0rpx 0rpx 30rpx 30rpx;
     text-align: center;
-    flex-direction: row;
+    flex-direction: column;
     line-height:500rpx;
     font-size: 2.5rem;
     font-weight:bolder;
     color:white;
     z-index: 1000;
     position: relative;
-    border: 1;
+    justify-content:space-around;
+ 
+    
 }
 .answer-view{
     height:900rpx;
@@ -40,4 +42,7 @@
 .global-header-view{
   background-color: red;
   
+}
+.ff {
+  z-index: 1100
 }
