@@ -80,7 +80,7 @@ Page({
     var animation = wx.createAnimation({});
     //animation.translate((this.data.widthScreen - 60), 0).scale(0.3).opacity(0.5).step({ duration: 3000 })
     //animation.translate((this.data.widthScreen - 60), -100).scale(0.3).opacity(0).step({ duration: 3000 })
-    animation.translate(0, 20).scale(0.3).opacity(1).step({ duration: 100 })
+    animation.translate(0, -90).scale(0.3).opacity(1).step({ duration: 100 })
     this.setData({
       queueData: animation.export()
     })

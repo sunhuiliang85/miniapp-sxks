@@ -3,7 +3,17 @@
      <text id="text-header" class='global-text-header'>{{qcardname}}</text>
 </view>
 <view  id="qcard-view" class="qcard-view">
-   <view style='height:200rpx'>
+   <view class="record_row">
+        <view class="record_cl_row">
+           <text style='font-size:30rpx'>1</text>
+           <image class="suceed_img" src='img/bread.png'></image>
+        </view>
+         <view class="record_cl_row">
+           <image class="sucess_img" src='img/bread.png'></image>
+        </view>
+        
+    </view>
+   <view class="fomular_row">
     <text>{{leftnum}} + {{rightnum}} = </text> <image style='width:80rpx;height:80rpx' src='img/bread.png'></image>
     </view>
       

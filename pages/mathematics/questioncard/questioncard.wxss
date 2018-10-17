@@ -5,15 +5,43 @@
     border-radius:0rpx 0rpx 30rpx 30rpx;
     text-align: center;
     flex-direction: column;
-    line-height:500rpx;
+    
     font-size: 2.5rem;
     font-weight:bolder;
     color:white;
     z-index: 1000;
     position: relative;
     justify-content:space-around;
- 
-    
+}
+.record_row{
+   display: flex;
+  flex-direction: row;
+  justify-content:flex-end;
+  height: 100rpx;
+  border: 1rpx solid green;
+  padding-top: 50rpx;
+}
+.record_cl_row{
+     display: flex;
+  flex-direction: column;
+  height: 100rpx;
+  border: 1rpx solid green
+}
+.fomular_row{
+  height: 400rpx;
+  line-height: 300rpx;
+}
+.sucess_img{
+   
+ border: 1rpx solid green;
+   width:80rpx;
+   height:80rpx;
+}
+.suceed_img{
+   margin-right: 30rpx;
+    border: 1rpx solid black;
+   width:80rpx;
+   height:80rpx;
 }
 .answer-view{
     height:900rpx;
