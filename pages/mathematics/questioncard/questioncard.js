@@ -13,6 +13,8 @@ Page({
     rightnum:'',
     ishiddennum:false,
     queueData:null,
+    sucessanimation:null,
+    formularanimation:null,
     answernum:0,
     curanswer:0,
     rightingnum:0,
@@ -89,14 +91,16 @@ Page({
       queueData: animation.export()
     })
   },
-  
+  successAnimation: function() {
+    var animation = wx.createAnimation({});
+    animation.translate(54, -78).scale(0).opacity(1).step({ duration: 100 });
+    this.setData({
+      successanimation: animation.export(),
+    })
+  },
   answer: function(e) {
     let dataset = e.target.dataset;
     let num = dataset.num;
- 
-   
-    var animation = wx.createAnimation({});
-    animation.translate(0, 20).scale(0.3).opacity(1).step({ duration: 100 })
     this.setData({
       ishiddennum: true,
       answernum: num,
@@ -115,7 +119,8 @@ Page({
         this.setData({
            rightingnum: this.data.rightingnum + 1,
            suceedrightnum: this.data.suceedrightnum + 1
-        })
+        });
+        this.successAnimation();
     } else {
         this.setData({
           suceedrightnum: 0
@@ -138,12 +143,31 @@ Page({
   //下一题
   nextQuestion: function(e) {
     let questionitems = algorithm.getFivebelowaddition();
-    this.setData({
-      leftnum: questionitems[0],
-      rightnum: questionitems[1],
-      curanswer: questionitems[2]
+    setTimeout(function (args) {
+    var formularanimation = wx.createAnimation({});
+    formularanimation.translate(0, 0).scale(1).opacity(0).step({ duration: 500 });
+    args.setData({
+      formularanimation: formularanimation.export(),
     })
-    this.curanswer = questionitems[2];
+    }, 300, this);
+    setTimeout(function (args) {
+      var formularanimation = wx.createAnimation({});
+      formularanimation.translate(0, 0).scale(1).opacity(1).step({ duration: 500 });
+      args.setData({
+        formularanimation: formularanimation.export(),
+        leftnum: questionitems[0],
+        rightnum: questionitems[1],
+        curanswer: questionitems[2]
+      }),
+        this.curanswer = questionitems[2];
+    }, 800, this);
+   
+    // this.setData({
+    //   leftnum: questionitems[0],
+    //   rightnum: questionitems[1],
+    //   curanswer: questionitems[2]
+    // })
+    // this.curanswer = questionitems[2];
   },
    
 })

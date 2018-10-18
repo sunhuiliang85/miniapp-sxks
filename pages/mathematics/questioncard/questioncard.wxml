@@ -6,20 +6,20 @@
    <view class="record_row">
          <view class="record_cl_row">
            <text style='font-size:30rpx;margin-right:-20rpx'>{{question_num}}</text> 
-           <image class="suceed_img" src='img/bread.png'></image>
+           <image class="suceed_img" src='img/yt.png'></image>
         </view>
         <view class="record_cl_row">
            <text style='font-size:30rpx;margin-right:-20rpx'>{{suceedrightnum}}</text> 
-           <image class="suceed_img" src='img/bread.png'></image>
+           <image class="suceed_img" src='img/yt.png'></image>
         </view>
          <view class="record_cl_row">
            <text style='font-size:30rpx;margin-right:-20rpx'>{{rightingnum}}</text> 
-           <image class="sucess_img" src='img/bread.png'></image>
+           <image class="sucess_img" src='img/yt.png'></image>
         </view>
         
     </view>
-   <view class="fomular_row">
-    <text>{{leftnum}} + {{rightnum}} = </text> <image style='width:80rpx;height:80rpx;margin-top:40rpx' src='img/bread.png'></image>
+   <view class="fomular_row" animation="{{formularanimation}}">
+    <text>{{leftnum}} + {{rightnum}} = </text> <image style='width:80rpx;height:80rpx;margin-top:40rpx' src='img/yt.png'  animation="{{successanimation}}"></image>
     </view>
       
       <view wx:if='{{ishiddennum}}' style='width:750rpx;height:300rpx;font-size:6rem' animation="{{queueData}}">{{answernum}}</view>
