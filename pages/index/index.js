@@ -14,7 +14,6 @@ Page({
   },
   onReady: function (e) {
     var context = wx.createCanvasContext('firstCanvas')
-
     context.setStrokeStyle("#00ff00")
     context.setLineWidth(5)
     context.rect(0, 0, 200, 200)

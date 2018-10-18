@@ -84,7 +84,7 @@ Page({
     if ('889ead25-c2d0-11e8-984a-00163e0c57fd' == dataset.qcardid)
         wx.navigateTo({
           url: '/pages/mathematics/questioncard/questioncard?qcardid=' + dataset.qcardid + '&qcardname=' + dataset.qcardname
-    })
+    }) 
      
   }
 })

@@ -18,28 +18,24 @@
   flex-direction: row;
   justify-content:flex-end;
   height: 100rpx;
-  border: 1rpx solid green;
   padding-top: 50rpx;
 }
 .record_cl_row{
-     display: flex;
+  display: flex;
   flex-direction: column;
   height: 100rpx;
-  border: 1rpx solid green
 }
 .fomular_row{
   height: 400rpx;
   line-height: 300rpx;
 }
 .sucess_img{
-   
- border: 1rpx solid green;
    width:80rpx;
    height:80rpx;
+   margin-right: 30rpx;
 }
 .suceed_img{
    margin-right: 30rpx;
-    border: 1rpx solid black;
    width:80rpx;
    height:80rpx;
 }
